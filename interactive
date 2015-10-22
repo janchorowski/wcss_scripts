@@ -1,0 +1,6 @@
+#! /bin/bash
+#
+# quickly start an interactive 10h session, enabling X-forwarding if X available
+#
+
+qsub -I -l walltime=10:00:00 ${DISPLAY+-X} "$@"

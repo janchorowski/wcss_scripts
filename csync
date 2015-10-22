@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Rsync using ssh-agent forwarding and multiple hops to cymes
+# use ":" to indicate the remote side, 
+# e.g. :/path/to/remote/filder and /path/to/local/folder
+#
+
+set -x
+
+rsync -e "ssh -A tryglaw.ii.uni.wroc.pl ssh -A hera ssh -A cymes" "$@"
