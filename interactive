@@ -3,4 +3,4 @@
 # quickly start an interactive 10h session, enabling X-forwarding if X available
 #
 
-qsub -I -l walltime=10:00:00 ${DISPLAY+-X} "$@"
+qsub -I -l walltime=02:00:00 ${DISPLAY+-X} "$@"

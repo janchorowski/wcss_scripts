@@ -7,4 +7,4 @@
 
 set -x
 
-rsync -e "ssh -A tryglaw.ii.uni.wroc.pl ssh -A hera ssh -A cymes" "$@"
+rsync -e "ssh -A jch@tryglaw.ii.uni.wroc.pl ssh -A hera ssh -A cymes" "$@"
